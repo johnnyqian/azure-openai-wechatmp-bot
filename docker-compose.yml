@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  azure-openai-wechatmp-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    container_name: azure-openai-wechatmp-bot
+    ports:
+      - 8000:8000
